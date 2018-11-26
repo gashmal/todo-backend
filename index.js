@@ -28,7 +28,6 @@ const taskModel = mongoose.model("task", {
     finished: Boolean
 });
 // Routes
-// Première page
 // / en GET, pour que le client récupère la liste des tâches
 
 app.get("/", function (req, res) {
