@@ -13,7 +13,7 @@ const cors = require("cors");
 app.use("/", cors());
 
 // CONNEXION AU SERVEUR
-mongoose.connect(MONGODB_URI || "mongodb://localhost:27017/todo", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/todo", {
         useNewUrlParser: true
     },
     function (err) {
